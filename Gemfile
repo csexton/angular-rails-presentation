@@ -14,8 +14,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'slim-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass-rails'
-gem 'jquery-rails'
-gem 'angularjs-rails'
+gem 'redcarpet'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
