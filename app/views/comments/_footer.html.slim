@@ -1,0 +1,8 @@
+/ Footer comments box
+/ two states, shown and hidden (maybe eventually)
+
+.wrap.container-fluid ng-controller="CommentsController"
+  .row-fluid ng-repeat="comment in comments"
+    .span12
+      p {{comment.name}}: {{comment.text}}
+

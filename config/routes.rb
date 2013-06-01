@@ -1,6 +1,7 @@
 Presentation::Application.routes.draw do
   root 'welcome#index'
   resources :slides
+  resources :comments
 
 
   # The priority is based upon order of creation: first created -> highest priority.

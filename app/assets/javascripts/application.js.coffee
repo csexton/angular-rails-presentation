@@ -20,4 +20,4 @@
 #= require_tree ./controllers
 #= require_tree .
 
-@app = angular.module('app', [])
+@app = angular.module('app', ['controllers', 'services'])
