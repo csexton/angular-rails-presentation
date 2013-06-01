@@ -1,6 +1,7 @@
 {
   "dependencies" : {
     "angular": "1.0.7",
-    "angular-resource": "1.0.7"
+    "angular-resource": "1.0.7",
+    "sass-bootstrap": "2.3.2"
   }
 }
