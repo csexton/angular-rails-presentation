@@ -1,11 +1,12 @@
-doctype
-html ng-app="app"
+doctype html
+html lang="en"
   head
-    title Presentation
-    link href="http://yui.yahooapis.com/combo?pure/0.1.0/base-min.css&pure/0.1.0/grids-min.css&pure/0.1.0/forms-min.css" rel="stylesheet"
     = stylesheet_link_tag    "application", media: "all"
-    = javascript_include_tag "application"
     = csrf_meta_tags
-  body
-    = yield
-
+    title Presentation
+  body ng-app="app"
+    #content
+      .container
+        = render 'layouts/flash'
+        = yield
+= javascript_include_tag "application"

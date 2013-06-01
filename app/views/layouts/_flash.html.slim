@@ -1,0 +1,12 @@
+#flash
+  .alert.alert-info.fade.in style="display:#{self.flash.key?(:info) ? 'block' : 'none' }"
+    a.close data-dismiss="alert" &times;
+    = self.flash[:info]
+
+  .alert.alert-notice.fade.in style="display:#{self.flash.key?(:notice) ? 'block' : 'none' }"
+    a.close data-dismiss="alert" &times;
+    = self.flash[:notice]
+
+  .alert.alert-error.fade.in style="display:#{self.flash.key?(:alert) ? 'block' : 'none' }"
+    a.close data-dismiss="alert" &times;
+    = self.flash[:alert]

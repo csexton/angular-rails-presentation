@@ -15,6 +15,7 @@ gem 'slim-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass-rails'
 gem 'redcarpet'
+gem 'neat' # Burbon, neat
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
