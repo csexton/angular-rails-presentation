@@ -10,6 +10,8 @@
 # WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 # GO AFTER THE REQUIRES BELOW.
 #
+#= require jquery
+#= require jquery.scrollTo/jquery.scrollTo
 #= require angular
 #= require angular-resource
 # require angular-ui-bootstrap
@@ -20,4 +22,7 @@
 #= require_tree ./controllers
 #= require_tree .
 
-@app = angular.module('app', ['controllers', 'services'])
+@app = angular.module('app', ['controllers', 'services', 'directives'])
+@app.config ['$httpProvider', ($httpProvider) ->
+  $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name="csrf-token"]').attr('content')
+]

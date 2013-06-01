@@ -1,0 +1,35 @@
+{
+  "name": "jquery.localScroll",
+  "version": "1.2.8",
+  "description": "This plugin will animate a regular anchor navigation. It will allow your visitors to navigate your site with a smooth scrolling effect.",
+  "homepage": "https://github.com/flesler/jquery.localScroll",
+  "main": [
+    "./jquery.localScroll.js",
+    "./jquery.localScroll.min.js"
+  ],
+  "dependencies": {
+    "jquery": ">=1.8",
+    "jquery.scrollTo": ">=1.4.3"
+  },
+  "keywords": [
+    "browser",
+    "animated",
+    "animation",
+    "scrolling",
+    "scroll",
+    "links",
+    "anchors"
+  ],
+  "author": {
+    "name": "Ariel Flesler",
+    "url": "http://flesler.blogspot.com/"
+  },
+  "gitHead": "874a175d8330c1647ef283555f83df43196e3e9c",
+  "readme": "# jQuery.LocalScroll\n\n### Installation and usage\n\nUsing [bower](https://github.com/twitter/bower):\n```bash\nbower install jquery.localScroll\n```\n\n### Notes\n\n* Requires jQuery.ScrollTo (http://github.com/flesler/jquery.scrollTo)\n\n* The hash of settings is passed in to jQuery.ScrollTo, so, in addition to jQuery.LocalScroll's settings, you can use any of jQuery.ScrollTo's. Check that plugin's documentation for further information.\n\n* If you want to convert the links from ALL over the page, with the same settings, just call $.localScroll(...) instead of $(...).localScroll(...)\n\n* Most of this plugin's defaults, belong to jQuery.ScrollTo, check it's demo for an example of each option.",
+  "readmeFilename": "README.md",
+  "_id": "jquery.localScroll@1.2.8",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/flesler/jquery.localScroll.git"
+  }
+}

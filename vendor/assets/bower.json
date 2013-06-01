@@ -2,6 +2,7 @@
   "dependencies" : {
     "angular": "1.0.7",
     "angular-resource": "1.0.7",
-    "sass-bootstrap": "2.3.2"
+    "sass-bootstrap": "2.3.2",
+    "jquery.scrollTo": "1.4.5"
   }
 }

@@ -1,8 +1,14 @@
 / Footer comments box
 / two states, shown and hidden (maybe eventually)
 
-.wrap.container-fluid ng-controller="CommentsController"
-  .row-fluid ng-repeat="comment in comments"
-    .span12
-      p {{comment.name}}: {{comment.text}}
+.wrap.container-fluid commented-scroll-to="max" ng-controller="CommentsController"
+  ul
+    li.comment.row-fluid ng-repeat="comment in comments" id="comment-{{comment.id}}"
+      .span12
+        p {{comment.name}}: {{comment.text}}
+  form.form-inline ng-submit="postMessage()"
+    label for="text"
+      Your Message:
+    input type="text" name="text" ng-model="messageText"
+    input type="submit" value="Transmit"
 
