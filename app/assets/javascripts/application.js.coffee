@@ -15,15 +15,15 @@
 #= require angular
 #= require angular-resource
 #= require angular-cookies
-# require angular-ui-bootstrap
 #= require_self
-#= require_tree ./services
-#= require_tree ./filters
-#= require_tree ./directives
-#= require_tree ./controllers
 #= require_tree .
 
 @app = angular.module('app', ['controllers', 'services', 'directives'])
 @app.config ['$httpProvider', ($httpProvider) ->
   $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name="csrf-token"]').attr('content')
 ]
+
+@app.config ($routeProvider) ->
+  $routeProvider
+    .when('/:id',{templateUrl:'slide.html',controller:'SlideController'})
+    .otherwise({redirectTo:'/0'})
