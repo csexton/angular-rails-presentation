@@ -1,3 +1,3 @@
-# Hello
+# Angular.js and Rails
 
-I am a slide
+I wish they would just get along

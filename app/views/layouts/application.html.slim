@@ -4,7 +4,7 @@ html lang="en"
     = stylesheet_link_tag    "application", media: "all"
     = csrf_meta_tags
     title Presentation
-  body ng-app="app"
+  body class="#{controller.controller_name}" ng-app="app"
     #content
       .container
         = render 'layouts/flash'

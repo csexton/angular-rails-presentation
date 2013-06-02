@@ -1,5 +1,5 @@
 angular.module 'controllers', [
-  'SlideController'
+  'SlidesController'
   'CommentsController'
   'CommentsAppController'
   'UserFormController'

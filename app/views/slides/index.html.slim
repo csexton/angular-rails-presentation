@@ -1,5 +1,10 @@
-script type="text/ng-template" id="slide.html"
-  .span12#slide
-    .body ng-bind-html-unsafe="slide.body"
-  a href="#/1" next
-.row ng-view=''
+.row
+  .span12 ng-controller="SlidesController"
+    .slide
+      .slide-body ng-bind-html-unsafe="slide.body"
+      .slide-nav
+        .pull-right
+          .btn-group
+            a.btn.btn-mini ng-disabled="prevDisabled()" ng-click="prevSlide()" Previous
+            a.btn.btn-mini ng-disabled="nextDisabled()" ng-click="nextSlide()" Next
+          span.slide-info slide {{ index+1 }}/{{slides.length}}
