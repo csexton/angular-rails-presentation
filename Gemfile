@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0.rc1'
 
 
-gem 'sqlite3'
+gem 'pg'
 
 gem 'jbuilder', '~> 1.0.1'
 gem 'sass-rails', '~> 4.0.0.rc1'
