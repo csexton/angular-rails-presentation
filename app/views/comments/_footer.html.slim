@@ -1,14 +1,26 @@
 / Footer comments box
 / two states, shown and hidden (maybe eventually)
 
-.wrap.container-fluid commented-scroll-to="max" ng-controller="CommentsController"
-  ul
-    li.comment.row-fluid ng-repeat="comment in comments" id="comment-{{comment.id}}"
-      .span12
-        p {{comment.name}}: {{comment.text}}
-  form.form-inline ng-submit="postMessage()"
-    label for="text"
-      Your Message:
-    input type="text" name="text" ng-model="messageText"
-    input type="submit" value="Transmit"
+#commenting-app ng-controller="CommentsAppCtrl"
 
+  #comments_full.wrap.container-fluid ng-show="mode == 'full'" commented-scroll-to="max" ng-controller="CommentsCtrl"
+    ul
+      li.comment.row-fluid ng-repeat="comment in comments" id="comment-{{comment.id}}"
+        .span12
+          p {{comment.name}}: {{comment.text}}
+
+  .states-container ng-switch="mode"
+
+    .wrap.container-fluid ng-switch-when="small"
+      form.form-inline novalidate="true" name="userNameForm" ng-submit="startCommenting()" ng-controller="UserFormController"
+        label for="name" Name:
+        input type="text" name="name" ng-model="comment.name" required="true"
+        input type="submit" value="Start Commenting!"
+
+    .wrap.container-fluid ng-switch-when="full"
+      form.form-inline ng-submit="postMessage()"
+        label for="text" Message:
+        input type="text" name="text" ng-model="comment.text"
+        input type="submit" value="Transmit"
+
+        input type="button" value="Change Username" ng-click="switchModes('small')"
