@@ -20,5 +20,9 @@ The files in `vendor/assets/components` are vendored so we can run on heroku and
 
 While sprockes knows about bower, sass does not -- the only problem is the load paths. For example this prject was setup with 'sass-bootstrap' and to get the import to work we had to add a line to our applicaiton.rb file to make sure to add that to the load path:
 
-    config.assets.paths << Rails.root.join("vendor","assets","components","sass-bootstrap","lib")
+    config.assets.paths << Rails.root.join("vendor","assets","components")
+
+Then in our scss file:
+
+    @import "sass-bootstrap/lib/bootstrap";
 
