@@ -11,6 +11,7 @@ m.controller 'CommentsAppCtrl', ['$scope', 'Comment', ($scope, Comment) ->
     $scope.mode == 'full'
 
   $scope.postMessage = ->
+    $scope.comment.name = $scope.user.name
     $scope.comment.$save()
     $scope.comment = new Comment()
 ]
