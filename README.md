@@ -1,3 +1,5 @@
+<img src="https://github.com/csexton/angular-rails-presentation/blob/master/public/rails-heart-angular.png?raw=true" />
+
 # Angular.js and Rails
 Learn to play nice.
 
