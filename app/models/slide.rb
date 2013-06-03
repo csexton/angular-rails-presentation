@@ -1,8 +1,18 @@
 class Slide
-  attr_reader :body, :name, :id
+  attr_reader :body, :id
 
   def self.all
-    list_files.each_with_index.map { |f,i| self.new(i, f) }
+    a = []
+    i = 0
+    list_files.each do |f|
+      read_file(f).split("!SLIDE").each do |contents|
+        contents.strip!
+        next if contents.empty?
+        a << self.new(i, contents)
+        i+=1
+      end
+    end
+    a
   end
 
   def self.list_files
@@ -13,26 +23,24 @@ class Slide
     Rails.root.join("slides", "*.md")
   end
 
-  def self.find(number)
-    self.new number.to_i, list_files[number.to_i]
-  end
-
-  def initialize(index, file)
-    @name = File.basename(file)
+  def initialize(index, body)
     @id = index
-    build file
+    build body
   end
 
-  def build(file)
-    @body = process_markdown(read_file(file)).html_safe
+  def build(body)
+    @body = process_markdown(body).html_safe
   end
 
-  def read_file(path)
+  def self.read_file(path)
     File.open(path,"r").read()
   end
 
   def process_markdown(md)
-    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, space_after_headers: true)
+    markdown = Redcarpet::Markdown.new(
+      Redcarpet::Render::HTML,
+      autolink: true,
+      space_after_headers: true)
     markdown.render(md)
   end
 

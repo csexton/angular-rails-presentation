@@ -1,5 +1,13 @@
-h1 Welcome#index
-p Find me in app/views/welcome/index.html.slim
-input ng-model="data.name"
-p Hello {{data.name}}
-input ng-model="data.name"
+.container
+  .row
+    h1 My thoughts
+    p This should be the page that folks can get a username and make/see the comments.
+    p The slides page would only show comments.
+    p We can view the slides at <a href="/slides">slides</a>. I made the page for slides exactly 1024x768 so that it will accomidate the projector (which is how showoff formatted the slides)
+
+
+
+
+
+footer
+  = render 'comments/footer'

@@ -15,10 +15,15 @@
 @import "comments";
 @import "slides";
 
-#content {
-  margin-bottom: $footer_height + 20px;
+body {
+  background-color: white;
 }
 
-body {
-  background-color: #efefef;
+.slide {
+  h1 {
+    padding-top:100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 80px;
+  }
 }

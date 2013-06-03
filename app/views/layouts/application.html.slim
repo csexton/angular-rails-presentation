@@ -5,12 +5,8 @@ html lang="en"
     = csrf_meta_tags
     title Presentation
   body class="#{controller.controller_name}" ng-app="app"
-    #content
-      .container
-        = render 'layouts/flash'
-        = yield
+    = render 'layouts/flash'
+    = yield
 
-    footer
-      = render 'comments/footer'
 
 = javascript_include_tag "application"

@@ -1,5 +1,6 @@
 Presentation::Application.routes.draw do
   root 'welcome#index'
+  get 'example_01' => 'welcome#example_01'
   resources :slides
   resources :comments
 

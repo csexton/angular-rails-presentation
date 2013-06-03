@@ -7,3 +7,13 @@ What are we going to use?
 * Knockout
 * ???
 * AngularJS
+* jQuery
+* Ember
+* Knockout
+* ???
+* AngularJS
+* jQuery
+* Ember
+* Knockout
+* ???
+* AngularJS

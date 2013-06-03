@@ -1,10 +1,20 @@
-.row
-  .span12 ng-controller="SlidesController"
-    .slide
-      .slide-body ng-bind-html-unsafe="slide.body"
-      .slide-nav
-        .pull-right
-          .btn-group
-            a.btn.btn-mini ng-disabled="prevDisabled()" ng-click="prevSlide()" Previous
-            a.btn.btn-mini ng-disabled="nextDisabled()" ng-click="nextSlide()" Next
-          span.slide-info slide {{ index+1 }}/{{slides.length}}
+#slides ng-controller="SlidesController"
+  .slide
+    .slide-body ng-bind-html-unsafe="slide.body"
+  .slide-comments
+    ul
+      li <strong>Josh</strong> These slidez are teh suck
+      li <strong>Chris</strong> IKNORITE
+      li <strong>Josh</strong> They gonna be pown'd
+      li <strong>Chris</strong> So owned
+      li <strong>Guy 1</strong> I am a comments
+      li <strong>Guy 2</strong> I am a comments
+      li <strong>Guy 3</strong> I am a comments
+      li <strong>Guy 4</strong> I am a comments
+      li <strong>Guy 5</strong> I am a comments
+      li <strong>Guy 6</strong> I am a comments
+  .slide-nav
+    span.slide-info slide {{ index+1 }}/{{slides.length}}
+    .btn-group
+      a.btn.btn-mini ng-disabled="prevDisabled()" ng-click="prevSlide()" Previous
+      a.btn.btn-mini ng-disabled="nextDisabled()" ng-click="nextSlide()" Next
