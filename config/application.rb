@@ -22,6 +22,6 @@ module Presentation
 
     # This is a hack to get sass to load partials from the sass-bootstrap
     # component:
-    config.assets.paths << Rails.root.join("vendor","assets","components","sass-bootstrap","lib")
+    config.assets.paths << Rails.root.join("vendor", "assets", "components")
   end
 end
