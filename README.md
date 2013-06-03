@@ -27,4 +27,4 @@ See the [BOWER](BOWER.md) file for details.
 
 # License
 
-MIT. See [LICENSE][LICENSE.md) file for details.
+MIT. See [LICENSE](LICENSE.md) file for details.
