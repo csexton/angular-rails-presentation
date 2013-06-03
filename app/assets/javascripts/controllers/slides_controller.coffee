@@ -23,11 +23,3 @@ m.controller 'SlidesController', ($scope, $http) ->
   $scope.nextDisabled= ->
     ($scope.index+1) == $scope.slides.length
 
-  jQuery("body").keydown (e) ->
-    if e.keyCode is 32 # space
-      $scope.nextSlide()
-    if e.keyCode is 37 # left
-      $scope.prevSlide()
-    if e.keyCode is 39 # right
-      $scope.nextSlide()
-

@@ -1,4 +1,8 @@
 #slides ng-controller="SlidesController"
+  global-keypress key-code="32" on-press="nextSlide()"
+  global-keypress key-code="37" on-press="prevSlide()"
+  global-keypress key-code="39" on-press="nextSlide()"
+
   .slide
     .slide-body ng-bind-html-unsafe="slide.body"
   .slide-comments

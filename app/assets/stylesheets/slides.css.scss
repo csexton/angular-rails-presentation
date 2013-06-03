@@ -8,6 +8,7 @@ body.slides {
   margin: auto;
   position: relative;
   background-color:white;
+  font-size:24px;
   @include border-bottom-radius( 10px );
 
   iframe {
@@ -39,6 +40,7 @@ body.slides {
     position: absolute;
     bottom:5px;
     right:3px;
+    font-size: 10.5px;
 
     .btn-group {
       padding: 0 5px;
@@ -51,6 +53,7 @@ body.slides {
   .slide-comments {
     overflow: scroll;
     border-top: thin solid #eee;
+    font-size:14px;
     height: 176px;
 
     ul {
