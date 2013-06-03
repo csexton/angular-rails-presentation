@@ -53,6 +53,8 @@ body.slides {
   .slide-comments {
     overflow: scroll;
     border-top: thin solid #eee;
+    background-color:#eee;
+    @include border-bottom-radius( 10px );
     font-size:14px;
     height: 176px;
 

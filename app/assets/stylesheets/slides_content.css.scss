@@ -1,0 +1,19 @@
+#slides {
+  .slide-body {
+    pre {
+      font-family: menlo;
+      line-height: 31px;
+      font-size: 24px;
+      background-color:white;
+      border: none;
+    }
+
+    img.fullscreen {
+      height:590px;
+      width:1024px;
+      max-width:1024px !important;
+      margin: -20px;
+    }
+
+  }
+}

@@ -1,5 +1,7 @@
 # How to format slides
 
+Slides are 1024x768, but that includes the comments. Actual slide area is 1024x590, images should be twice that size for HiDPI.
+
 !SLIDE
 
 # H1 tags will be big and centered on the slide
@@ -48,3 +50,4 @@ Two slides, yo
 <iframe src="/example_01"></iframe>
 
 It's just an iframe that grabs <a href="/example_01">this</a>.
+
