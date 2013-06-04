@@ -13,7 +13,7 @@
         .comments-form
           form.form-inline ng-submit="postMessage()"
             input.input-large.fullwidth type="text" name="text" ng-model="comment.text" placeholder="Type your comment here"
-            input.btn type="submit" value="Transmit"
+            input.btn.btn-success type="submit" value="Transmit"
             input.btn type="button" value="Change Username" ng-click="switchModes('small')"
 
 
@@ -21,5 +21,5 @@
       h2 What's your name?
       form.form-inline novalidate="true" name="userNameForm" ng-submit="startCommenting()" ng-controller="UserFormController"
         input.input-large type="text" name="name" ng-model="user.name" required="true" placeholder="Username"
-        input.btn type="submit" value="Start Commenting!"
+        input.btn.btn-success type="submit" value="Start Commenting!"
 
