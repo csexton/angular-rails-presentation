@@ -23,37 +23,28 @@
   }
 }
 .slide-comments {
-  .comments-list{
+  .comments-list {
     height:177px;
   }
 }
 .comments-full {
-  .comments-list{
+  .comments-list {
     height:450px;
   }
 }
-.comments-form{
+.comments-form {
   form {
     margin: 0;
   }
   input.fullwidth {
     width: 645px;
   }
-  input.btn {
-    margin-left: 5px;
-  }
 }
 
 .comments-login {
   width: 500px;
-  @include border-radius( 10px );
-  background-color: #eee;
   text-align: center;
-  padding: 30px 50px 40px;
   margin: 100px auto 0 auto;
-  .btn{
-    margin-left:5px;
-  }
 }
 
 

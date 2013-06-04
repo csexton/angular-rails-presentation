@@ -17,7 +17,7 @@
             input.btn type="button" value="Change Username" ng-click="switchModes('small')"
 
 
-    .comments-login ng-switch-when="small"
+    .well.comments-login ng-switch-when="small"
       h2 What's your name?
       form.form-inline novalidate="true" name="userNameForm" ng-submit="startCommenting()" ng-controller="UserFormController"
         input.input-large type="text" name="name" ng-model="user.name" required="true" placeholder="Username"
