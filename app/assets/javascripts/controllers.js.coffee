@@ -1,6 +1,6 @@
 angular.module 'controllers', [
   'SlidesController'
   'CommentsController'
-  'CommentsAppController'
+  'ChatRoomController'
   'UserFormController'
 ]
