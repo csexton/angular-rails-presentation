@@ -1,0 +1,60 @@
+.comments-list{
+  overflow-y: scroll;
+}
+
+.comments-box {
+  height: 500px;
+  margin-top:65px;
+}
+.comments-list {
+  strong {
+    padding-left:20px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    color: black;
+  }
+  li:nth-child(odd) {
+    background-color: #eee;
+  }
+  li:nth-child(even) {
+    background-color: rgb(245, 245, 245);
+  }
+}
+.slide-comments {
+  .comments-list{
+    height:177px;
+  }
+}
+.comments-full {
+  .comments-list{
+    height:450px;
+  }
+}
+.comments-form{
+  form {
+    margin: 0;
+  }
+  input.fullwidth {
+    width: 645px;
+  }
+  input.btn {
+    margin-left: 5px;
+  }
+}
+
+.comments-login {
+  width: 500px;
+  @include border-radius( 10px );
+  background-color: #eee;
+  text-align: center;
+  padding: 30px 50px 40px;
+  margin: 100px auto 0 auto;
+  .btn{
+    margin-left:5px;
+  }
+}
+
+

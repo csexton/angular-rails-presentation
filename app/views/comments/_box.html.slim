@@ -1,0 +1,25 @@
+/ Footer comments box
+/ two states, shown and hidden (maybe eventually)
+
+#comments ng-controller="CommentsAppCtrl"
+
+  .span12.comments-box ng-switch="mode"
+    .comments-full ng-switch-when="full"
+      .well ng-controller="CommentsCtrl"
+        .comments-list commented-scroll-to="max"
+          ul
+            li.comment.row ng-repeat="comment in comments" id="comment-{{comment.id}}"
+              | <strong>{{comment.name}}:</strong> {{comment.text}}
+        .comments-form
+          form.form-inline ng-submit="postMessage()"
+            input.input-large.fullwidth type="text" name="text" ng-model="comment.text" placeholder="Type your comment here"
+            input.btn type="submit" value="Transmit"
+            input.btn type="button" value="Change Username" ng-click="switchModes('small')"
+
+
+    .comments-login ng-switch-when="small"
+      h2 What's your name?
+      form.form-inline novalidate="true" name="userNameForm" ng-submit="startCommenting()" ng-controller="UserFormController"
+        input.input-large type="text" name="name" ng-model="user.name" required="true" placeholder="Username"
+        input.btn type="submit" value="Start Commenting!"
+

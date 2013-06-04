@@ -1,6 +1,8 @@
 m = angular.module 'CommentsController', []
 m.controller 'CommentsCtrl', ['$scope', '$timeout', 'Comment', ($scope, $timeout, Comment) ->
   $scope.comments = []
+  $scope.shouldPoll = ->
+    true
 
   tick = ->
     if $scope.shouldPoll()
