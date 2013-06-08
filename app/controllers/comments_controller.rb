@@ -1,6 +1,7 @@
 class CommentsController < ApplicationController
   def index
-    @comments = Comment.order(created_at: :desc).limit(50).reverse
+    @comments = Comment.order(created_at: :desc).limit(params[:limit].to_i)
+    @comments = @comments.reverse unless params[:order].to_s == 'reverse'
   end
 
   def create

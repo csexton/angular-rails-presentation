@@ -6,8 +6,8 @@
   .slide
     .slide-body ng-bind-html-unsafe="slide.body"
   .slide-comments
-    .comments ng-controller="CommentsCtrl"
-      .comments-list commented-scroll-to="max"
+    .comments ng-controller="CommentsCtrl" reverse-comments-order="true" num-comments="10"
+      .comments-list
         ul
           li.comment.row ng-repeat="comment in comments" id="comment-{{comment.id}}"
             | <strong>{{comment.name}}:</strong> {{comment.text}}
