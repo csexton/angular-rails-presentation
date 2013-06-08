@@ -12,6 +12,7 @@
           li.comment.row ng-repeat="comment in comments" id="comment-{{comment.id}}"
             | <strong>{{comment.name}}:</strong> {{comment.text}}
   .slide-nav
+    a http://whatever.com FIXME
     span.slide-info slide {{ index+1 }}/{{slides.length}}
     .btn-group
       a.btn.btn-mini ng-disabled="prevDisabled()" ng-click="prevSlide()" Previous
