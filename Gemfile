@@ -17,8 +17,6 @@ gem 'font-awesome-sass-rails'
 gem 'redcarpet'
 gem 'neat' # Burbon, neat
 
-gem 'ngmin-rails' # ng pre-minifier, it's awesome!
-
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'debugger'
@@ -29,4 +27,10 @@ group :heroku do
   gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
   gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
   gem 'unicorn'
+end
+
+group :assets do
+  gem 'therubyracer', platforms: :ruby
+  gem 'uglifier'
+  gem 'ngmin-rails' # ng pre-minifier, it's awesome!
 end
