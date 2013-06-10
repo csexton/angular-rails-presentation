@@ -1,5 +1,5 @@
 m = angular.module 'ChatRoomController', []
-m.controller 'ChatRoomCtrl', ['$scope', 'Comment', ($scope, Comment) ->
+m.controller 'ChatRoomCtrl', ($scope, Comment) ->
   $scope.mode = "small"
   $scope.user = {name: ''}
   $scope.comment = new Comment()
@@ -11,4 +11,3 @@ m.controller 'ChatRoomCtrl', ['$scope', 'Comment', ($scope, Comment) ->
     $scope.comment.name = $scope.user.name
     $scope.comment.$save()
     $scope.comment = new Comment()
-]

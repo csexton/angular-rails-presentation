@@ -17,6 +17,8 @@ gem 'font-awesome-sass-rails'
 gem 'redcarpet'
 gem 'neat' # Burbon, neat
 
+gem 'ngmin-rails' # ng pre-minifier, it's awesome!
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'debugger'

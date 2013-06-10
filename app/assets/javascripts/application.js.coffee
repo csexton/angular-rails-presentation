@@ -19,9 +19,8 @@
 #= require_tree .
 
 @app = angular.module('app', ['controllers', 'services', 'directives'])
-@app.config ['$httpProvider', ($httpProvider) ->
+@app.config ($httpProvider) ->
   $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name="csrf-token"]').attr('content')
-]
 
 @app.config ($routeProvider) ->
   $routeProvider

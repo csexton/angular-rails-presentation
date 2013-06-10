@@ -78,6 +78,8 @@ GEM
     neat (1.3.0)
       bourbon (>= 2.1)
       sass (>= 3.2)
+    ngmin-rails (0.3.8.1)
+      rails (>= 3.1)
     pg (0.15.1)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -157,6 +159,7 @@ DEPENDENCIES
   font-awesome-sass-rails
   jbuilder (~> 1.0.1)
   neat
+  ngmin-rails
   pg
   rails (= 4.0.0.rc1)
   rails-pry

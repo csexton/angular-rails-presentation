@@ -1,5 +1,5 @@
 m = angular.module 'CommentsController', []
-m.controller 'CommentsCtrl', ['$scope', '$timeout', 'Comment', ($scope, $timeout, Comment) ->
+m.controller 'CommentsCtrl', ($scope, $timeout, Comment) ->
   $scope.commentSettings = {
     order: ''
     limit: '50'
@@ -32,4 +32,3 @@ m.controller 'CommentsCtrl', ['$scope', '$timeout', 'Comment', ($scope, $timeout
   # Need to defer initial execution until after any settings directives have
   # had time to parse
   $timeout(tick, 1)
-]
