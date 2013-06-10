@@ -15,8 +15,8 @@
 #= require angular
 #= require angular-resource
 #= require angular-cookies
-#= require_self
 #= require_tree .
+#= require_self
 
 @app = angular.module('app', ['controllers', 'services', 'directives'])
 @app.config ['$httpProvider', ($httpProvider) ->
