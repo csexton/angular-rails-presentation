@@ -15,6 +15,7 @@
 #= require angular
 #= require angular-resource
 #= require angular-cookies
+#= require highlightjs
 #= require_tree .
 #= require_self
 

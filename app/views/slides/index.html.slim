@@ -4,7 +4,7 @@
   global-keypress key-code="39" on-press="nextSlide()"
 
   .slide
-    .slide-body ng-bind-html-unsafe="slide.body"
+    .slide-body code-highlight="true" ng-bind-html-unsafe="slide.body"
   .slide-comments
     .comments ng-controller="CommentsCtrl" reverse-comments-order="true" num-comments="10"
       .comments-list

@@ -1,11 +1,7 @@
 #slides {
   .slide-body {
-    pre {
-      font-family: menlo;
-      line-height: 31px;
-      font-size: 24px;
-      background-color:white;
-      border: none;
+    pre code {
+      font-size: 18px;
     }
 
     img.fullscreen {
