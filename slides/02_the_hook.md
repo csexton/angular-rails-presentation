@@ -7,7 +7,7 @@ With Rails but all fancy and AJAXy
 
 !SLIDE
 
-# or Ember or Backbone or Knockout or Batman or Knockback or Maria or Kendo or GWT
+# or Ember or Backbone or Knockout or Batman or Knockback or Maria or Kendo or GWT or Dojo
 
 !SLIDE
 

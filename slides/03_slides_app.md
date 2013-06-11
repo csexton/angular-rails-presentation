@@ -1,13 +1,29 @@
 ## Slides model
 
+    attr_reader :body, :id
     class Slide
+      def self.all
+        list_files.each_with_object([]) do |f, slides|
+          File.read(f).split("SLIDE").each do |contents|
+            slides << self.new(slides.length, contents)
+          end
+        end
+      end
+
+      def initialize(index, body)
+        @id = index
+        @body = process_markdown(body)
+      end
     end
 
 !SLIDE
 
 ## Slide Controller
 
-    class SlidesController
+    class SlidesController < ApplicationController
+      def index
+        @slides = Slide.all
+      end
     end
 
 
@@ -15,7 +31,10 @@
 
 ## Slide View
 
-    json.body @slide.body
+    json.array!(@slides) do |slide|
+      json.id slide.id
+      json.body slide.body
+    end
 
 
 !SLIDE
@@ -24,8 +43,35 @@
 
     m = angular.module 'SlidesController', []
     m.controller 'SlidesController', ($scope, $http) ->
-      # ...
+      $scope.slides = []
 
+!SLIDE
+
+## Angular Slide Controller
+
+    m = angular.module 'SlidesController', []
+    m.controller 'SlidesController', ($scope, $http) ->
+      $scope.slides = []
+      $http.get("/slides.json")
+        .success (data) ->
+          $scope.slides = data
+          $scope.index = 0
+          $scope.slide = data[$scope.index]
+
+!SLIDE
+
+## Angular Slide Controller
+
+    m = angular.module 'SlidesController', []
+    m.controller 'SlidesController', ($scope, $http) ->
+      $scope.slides = []
+      $http.get("/slides.json")
+        .success (data) ->
+          $scope.slides = data
+          $scope.index = 0
+          $scope.slide = data[$scope.index]
+      $scope.nextSlide = ->
+        $scope.slide = $scope.slides[++$scope.index]
 !SLIDE
 
 ## Angular Slide Template
