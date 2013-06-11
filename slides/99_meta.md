@@ -51,3 +51,14 @@ Two slides, yo
 
 It's just an iframe that grabs <a href="/example_01">this</a>.
 
+!SLIDE
+
+<img src="rails-vs-angular.png" class="fullscreen" />
+
+!SLIDE
+
+<img src="rails-heart-angular.png" class="fullscreen" />
+
+!SLIDE
+
+<img src="rails-brokenheart-angular.png" class="fullscreen" />
