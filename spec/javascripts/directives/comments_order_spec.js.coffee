@@ -1,14 +1,21 @@
 describe "CommentsSettings", ->
 
   beforeEach module 'CommentsSettings'
+  beforeEach inject ($rootScope) ->
+    $rootScope.commentSettings = {}
 
   describe "reverseCommentsOrder", ->
-    beforeEach inject ($rootScope) ->
-      $rootScope.commentSettings = {}
 
     it "applies to an attribute", inject ($compile, $rootScope) ->
       $compile('<div reverse-comments-order></div>')($rootScope)
-      $rootScope.$digest()
 
       expect($rootScope.commentSettings).toBeDefined()
       expect($rootScope.commentSettings.order).toEqual('reverse')
+
+  describe "numComments", ->
+
+    it "applies to an attribute", inject ($compile, $rootScope) ->
+      $compile('<div num-comments="123"></div>')($rootScope)
+
+      expect($rootScope.commentSettings).toBeDefined()
+      expect($rootScope.commentSettings.limit).toEqual('123')

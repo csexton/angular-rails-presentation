@@ -19,7 +19,7 @@ files = [
   'app/assets/javascripts/**/*.coffee',
 
   'karma/*_spec*',
-  'spec/javascripts/*_spec*'
+  'spec/javascripts/**/*_spec*'
 ];
 
 
