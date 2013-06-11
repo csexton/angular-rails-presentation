@@ -10,7 +10,16 @@ basePath = '';
 files = [
   JASMINE,
   JASMINE_ADAPTER,
-  'karma/*_spec*'
+  'vendor/assets/components/jquery/jquery.js',
+  'vendor/assets/components/angular/angular.js',
+  'vendor/assets/components/angular-mocks/angular-mocks.js',
+  'vendor/assets/components/angular-resource/angular-resource.js',
+  'vendor/assets/components/angular-cookies/angular-cookies.js',
+
+  'app/assets/javascripts/**/*.coffee',
+
+  'karma/*_spec*',
+  'spec/javascripts/*_spec*'
 ];
 
 
