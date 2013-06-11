@@ -11,10 +11,14 @@
     end
 
 
+!SLIDE
+
 ## Slide View
 
     json.body @slide.body
 
+
+!SLIDE
 
 ## Angular Slide Controller
 
@@ -22,15 +26,20 @@
     m.controller 'SlidesController', ($scope, $http) ->
       # ...
 
+!SLIDE
+
 ## Angular Slide Template
 
-    <div id="slides" ng-controller="SlidesController" class="ng-scope">
+    <body ng-app="app">
+    <div ng-controller="SlidesController">
         <div class="slide">
-            <div class="slide-body ng-binding" ng-bind-html-unsafe="slide.body"></div>
+            <div class="slide-body" ng-bind-html-unsafe="slide.body">
+            </div>
         </div>
     </div>
+    </body>
 
+!SLIDE
 
 # That's it?
 Yep.
-

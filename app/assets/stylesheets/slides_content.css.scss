@@ -1,5 +1,14 @@
 #slides {
   .slide-body {
+    font-size: 36px;
+    line-height: 40px;
+    ol, ul {
+      padding-left: 45px;
+    }
+    li {
+      line-height: 43px;
+    }
+
     pre {
       font-family: menlo;
       line-height: 31px;
@@ -13,6 +22,10 @@
       width:1024px;
       max-width:1024px !important;
       margin: -20px;
+    }
+
+    code {
+      font-size: 23px;
     }
 
   }

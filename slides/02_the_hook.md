@@ -1,5 +1,5 @@
 # Presentation Software
-With rails but all fancy and AJAXy
+With Rails but all fancy and AJAXy
 
 !SLIDE
 
