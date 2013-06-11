@@ -20,6 +20,22 @@ end
 
 !SLIDE
 
+## Angular from CDN
+
+```html
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/.../1.0.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/.../1.0.7/angular-resource.js"></script>
+  </head>
+  <body ng-app="app">
+    <!-- ... -->
+  </body>
+</html>
+```
+
+!SLIDE
+
 ## Slide Controller
 
 ```ruby

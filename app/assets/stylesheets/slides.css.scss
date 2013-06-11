@@ -55,10 +55,13 @@ body.slides {
     border-top: thin solid #eee;
     background-color:#eee;
     @include border-bottom-radius( 10px );
-    font-size:14px;
+    font-size:23px;
     height: 176px;
 
     ul {
+      li {
+        padding:5px;
+      }
       strong {
         padding-right:3px;
         }
