@@ -1,4 +1,4 @@
-m = angular.module 'Comment', ['ngResource']
-m.factory 'Comment', ['$resource', ($resource) ->
-  Comment = $resource '/comments/:id', {}, {}
-]
+angular.module('Comment', ['ngResource'])
+  .factory 'Comment', ['$resource', ($resource) ->
+    Comment = $resource '/comments/:id', {}, {}
+  ]
