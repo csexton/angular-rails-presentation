@@ -1,0 +1,12 @@
+#slides ng-controller="SlidesController"
+  global-keypress key-code="32" on-press="nextSlide()"
+  global-keypress key-code="37" on-press="prevSlide()"
+  global-keypress key-code="39" on-press="nextSlide()"
+
+  .slide
+    .slide-body ng-bind-html-unsafe="slide.body"
+  .slide-nav
+    span.slide-info slide {{ index+1 }}/{{slides.length}}
+    .btn-group
+      a.btn.btn-mini ng-disabled="prevDisabled()" ng-click="prevSlide()" Previous
+      a.btn.btn-mini ng-disabled="nextDisabled()" ng-click="nextSlide()" Next
