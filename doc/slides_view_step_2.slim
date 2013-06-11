@@ -1,0 +1,5 @@
+#slides ng-controller="SlidesController"
+  .slide
+    .slide-body ng-bind-html-unsafe="slide.body"
+  .slide-nav
+    a.btn.btn-mini ng-click="nextSlide()" Next
