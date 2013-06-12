@@ -11,7 +11,7 @@ class Slide
   end
 
   def self.list_files
-    Dir[path]
+    Dir[path].sort
   end
 
   def self.path
@@ -34,7 +34,23 @@ class Slide
       space_after_headers: true,
       fenced_code_blocks: true
     )
-    markdown.render(md)
+    markdown.render( preprocess(md) )
+  end
+
+  def preprocess(text)
+    text.gsub(/!FILE (.*?)(:(\d+)(:(\d+))?)?\n/) do |match|
+      md = $~
+      filename = md[1]
+      from = md[3]
+      to = md[5]
+      extension = filename.split(/\./)[-1]
+      data = File.read(filename).split(/\n/)
+      if from
+        eor = to ? to.to_i : -1
+        data = data[(from.to_i - 1)..(eor - 1)]
+      end
+      "```#{extension}\n#{data.join("\n")}\n```\n"
+    end
   end
 
 end

@@ -19,13 +19,14 @@
 #= require_tree .
 #= require_self
 
-@app = angular.module('app', ['controllers', 'services', 'directives'])
-@app.config ['$httpProvider', ($httpProvider) ->
-  $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name="csrf-token"]').attr('content')
-]
+angular.module('app', ['controllers', 'services', 'directives'])
 
-@app.config ['$routeProvider', ($routeProvider) ->
-  $routeProvider
-    .when('/:id',{templateUrl:'slide.html',controller:'SlideController'})
-    .otherwise({redirectTo:'/0'})
-]
+  .config ['$httpProvider', ($httpProvider) ->
+    $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name="csrf-token"]').attr('content')
+  ]
+
+  .config ['$routeProvider', ($routeProvider) ->
+    $routeProvider
+      .when('/:id',{templateUrl:'slide.html',controller:'SlideController'})
+      .otherwise({redirectTo:'/0'})
+  ]
