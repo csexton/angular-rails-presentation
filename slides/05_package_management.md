@@ -65,6 +65,8 @@ npm install -g bower
 bower install
 ```
 
+TODO: show output
+
 !SLIDE
 
 ## Vendor the assets
