@@ -9,7 +9,7 @@ describe "CommentsSettings", ->
     it "applies to an attribute", inject ($compile, $rootScope) ->
       $compile('<div reverse-comments-order></div>')($rootScope)
 
-      expect($rootScope.commentSettings).toBeDefined()
+      expect($rootScope.commentSettings.order).toBeDefined()
       expect($rootScope.commentSettings.order).toEqual('reverse')
 
   describe "numComments", ->
