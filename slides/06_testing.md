@@ -13,6 +13,13 @@
 !SLIDE
 
 ## Tests are easy!
+<pre class="filename">app/assets/javascripts/controllers/slides_controller.js.coffee:</pre>
+```coffeescript
+angular.module('SlidesController', [])
+  .controller 'SlidesController', ($scope) ->
+    $scope.slides = []
+```
+<pre class="filename">spec/javascripts/controllers/slides_controller_spec.js.coffee:</pre>
 ```coffeescript
 describe "SlidesController", ->
   scope = {}
@@ -23,14 +30,10 @@ describe "SlidesController", ->
 
     expect(scope.slides).toBeDefined()
 ```
-```coffeescript
-angular.module('SlidesController', [])
-  .controller 'SlidesController', ($scope) ->
-    $scope.slides = []
-```
 
 !SLIDE
 
+<pre class="filename">spec/javascripts/controllers/slides_controller_spec.js.coffee:</pre>
 ```coffeescript
 describe "SlidesController", ->
   scope = {}
@@ -39,21 +42,19 @@ describe "SlidesController", ->
 
   it "queries for slides", inject ($controller) ->
     spyOn(fakettp, 'get').andReturn(jasmine.createSpyObj('response', ['success']))
-    $controller 'SlidesController',
-      $scope: scope
-      $http: fakettp
+
+    $controller 'SlidesController', { $scope: scope, $http: fakettp }
 
     expect(fakettp.get).toHaveBeenCalledWith('/slides.json')
 ```
+<pre class="filename">app/assets/javascripts/controllers/slides_controller.js.coffee:</pre>
 ```coffeescript
 angular.module('SlidesController', [])
   .controller 'SlidesController', ($scope, $http) ->
     $scope.slides = []
     $http.get("/slides.json")
       .success (data) ->
-        $scope.slides = data
-        $scope.index = 0
-        $scope.slide = data[$scope.index]
+        ...
 ```
 
 !SLIDE

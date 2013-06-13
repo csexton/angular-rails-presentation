@@ -91,7 +91,7 @@ angular.module('SlidesController', [])
 <input ng-model="data.name"/>
 <p> Hello {{data.name}} </p>
 <input ng-model="data.name"/>
-<p> OHAI {{data.name | uppercase}} </p>
+<p> {{"ohai " + data.name | uppercase}} </p>
 ```
 <iframe src="/example_01"></iframe>
 

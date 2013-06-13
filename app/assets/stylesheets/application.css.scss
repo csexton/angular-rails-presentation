@@ -17,8 +17,9 @@
 @import "welcome";
 @import "slides";
 @import "slides_content";
-// monokai, school_book, vs not bad alts
-@import "highlightjs/styles/github";
+// brown_paper, default, googlecode (!), idea(!), xcode
+/*@import "highlightjs/styles/github";*/
+@import "highlightjs/styles/idea";
 
 body {
   background-color: white;
