@@ -19,6 +19,7 @@ What goes where
 
 !SLIDE
 
+## JS Files
 <pre style="font-family: menlo; line-height: 31px; font-size: 24px;">
     app/assets/javascripts
     ├── controllers/
@@ -34,11 +35,11 @@ What goes where
 
 !SLIDE
 
-# No Autoloading :(
-
+<img src="/sad-panda.jpg" class="fullscreen" />
+<h1 style="position:absolute; left: 387px; top: 300px;color:white;">No Autoloading</h1> 
 !SLIDE
 
-## Module Loading
+[[##]] Module Loading
 
 <pre class="filename">app/assets/javascripts/application.js.coffee:</pre>
 
@@ -62,21 +63,20 @@ angular.module('SlidesController', [])
 
 !SLIDE
 
+TODO: clean up this tree
+
 <pre style="font-family: menlo; line-height: 31px; font-size: 24px;">
     app/assets/javascripts/
     ├── application.js.coffee
     ├── controllers.js.coffee
     ├── controllers/
-    │   ├── chat_room_controller.js.coffee
-    │   ├── comments_controller.js.coffee
     │   ├── slide_controller.js.coffee
     │   ├── slides_controller.js.coffee
     │   └── user_form_controller.js.coffee
     ├── directives.js.coffee
     ├── directives/
     │   ├── comments_order.js.coffee
-    │   ├── keypress.js.coffee
-    │   └── scroll_to.js.coffee
+    │   └── keypress.js.coffee
     ├── filters/
     ├── services.js.coffee
     └── services/

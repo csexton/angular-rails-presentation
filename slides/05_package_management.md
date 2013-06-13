@@ -64,6 +64,18 @@ brew install npm
 npm install -g bower
 bower install
 ```
+
+TODO: show output
+
+!SLIDE
+
+## Vendor the assets
+
+```bash
+git add /vendor/assets/components
+```
+
+
 !SLIDE
 
 ## Sass
@@ -81,3 +93,19 @@ Then in our scss file:
 # Asset Pipleine
 
 ❤ It just works! ❤
+
+!SLIDE
+
+## Asset Pipleine
+
+In `application.js`
+
+```javascript
+//= require angular
+//= require angular-resource
+//= require_tree .
+//= require_self
+```
+
+
+
