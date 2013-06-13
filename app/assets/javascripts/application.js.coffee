@@ -21,12 +21,12 @@
 
 angular.module('app', ['controllers', 'services', 'directives'])
 
-  .config ['$httpProvider', ($httpProvider) ->
+  .config(['$httpProvider', ($httpProvider) ->
     $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name="csrf-token"]').attr('content')
-  ]
+  ])
 
-  .config ['$routeProvider', ($routeProvider) ->
+  .config(['$routeProvider', ($routeProvider) ->
     $routeProvider
       .when('/:id',{templateUrl:'slide.html',controller:'SlideController'})
       .otherwise({redirectTo:'/0'})
-  ]
+  ])
