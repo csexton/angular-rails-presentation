@@ -25,5 +25,39 @@
       font-size: 23px;
     }
 
+    pre.filename {
+      color: black;
+      font-size: 20px;
+      border: 0;
+      background-color: #FFFFFF;
+    }
+
+    pre.karmaoutput {
+
+      font-size: 20px;
+      span.green {
+        color: green;
+      }
+    }
+
+    #elight {
+      position: absolute;
+      top: 230px;
+      left: 520px;
+
+      #interrobang {
+        position: relative;
+        top: -321px;
+        left: 191px;
+        font-size: 160px;
+      }
+    }
+
+  }
+
+  h1 + h1 {
+    padding-top: 10px;
+    color: blue;
+    background-color: #2FA;
   }
 }
