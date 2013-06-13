@@ -39,7 +39,7 @@ What goes where
 <h1 style="position:absolute; left: 387px; top: 300px;color:white;">No Autoloading</h1> 
 !SLIDE
 
-[[##]] Module Loading
+## Module Loading
 
 <pre class="filename">app/assets/javascripts/application.js.coffee:</pre>
 

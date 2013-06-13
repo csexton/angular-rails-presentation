@@ -42,7 +42,6 @@ srsly?
 * Built by Google
 * Simple Code
 * Awesome two-way bindings
-TODO: Add code
 
 !SLIDE
 
