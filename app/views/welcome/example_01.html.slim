@@ -1,4 +1,19 @@
-input ng-model="data.name"
-p style="padding-top: 10px" Hello {{data.name}}
-input ng-model="data.name"
-p style="padding-top: 10px" {{ "ohai " + data.name | uppercase}}
+css:
+
+  .example {
+  margin:10px 0 0 5px;
+  font-size:40px;
+  }
+
+  .example input {
+    margin:14px 0 ;
+    font-size:40px;
+  }
+
+
+.example
+  input ng-model="data.name"
+  p style="padding-top: 10px" Hello {{data.name}}
+  input ng-model="data.name"
+  p style="padding-top: 10px" {{ "ohai " + data.name | uppercase}}
+
