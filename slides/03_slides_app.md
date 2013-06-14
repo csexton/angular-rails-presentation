@@ -87,18 +87,12 @@ angular.module('SlidesController', [])
 
 ## Two-Way Binding
 
+<iframe src="/example_01"></iframe>
 ```html
 <input ng-model="data.name"/>
 <p> Hello {{data.name}} </p>
 <input ng-model="data.name"/>
 <p> {{"ohai " + data.name | uppercase}} </p>
-```
-<iframe src="/example_01"></iframe>
-
-```html
-<input ng-model="data.name"></input>
-<p>Hello {{data.name}}</p>
-<input ng-model="data.name"></input>
 ```
 
 
