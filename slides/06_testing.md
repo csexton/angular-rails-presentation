@@ -58,10 +58,10 @@ angular.module('SlidesController', [])
 ```
 !SLIDE
 
-# <span style="color:red;">😈</span> Karma <span style="color: green;">😇</span> 
+# Karma
 !SLIDE
 
-# <span style="color:red;">😈</span> Karma <span style="color: green;">😇</span> 
+# Karma
 
 ```bash
 $ npm install karma
@@ -69,7 +69,7 @@ $ npm install karma
 
 !SLIDE
 
-# <span style="color:red;">😈</span> Karma <span style="color: green;">😇</span> 
+# Karma
 
 ```bash
 $ npm install karma
