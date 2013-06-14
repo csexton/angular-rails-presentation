@@ -56,14 +56,33 @@ angular.module('SlidesController', [])
       .success (data) ->
         ...
 ```
+!SLIDE
+
+# <span style="color:red;">😈</span> Karma <span style="color: green;">😇</span> 
+!SLIDE
+
+# <span style="color:red;">😈</span> Karma <span style="color: green;">😇</span> 
+
+```bash
+$ npm install karma
+```
 
 !SLIDE
 
-# Karma
+# <span style="color:red;">😈</span> Karma <span style="color: green;">😇</span> 
+
+```bash
+$ npm install karma
+```
+<div id="dealwithit">
+  <img src="deal_with_it.gif">
+</div>
 
 !SLIDE
 
+<pre class="filename">karma.conf.js:</pre>
 ```javascript
+...
 files = [
   // Jasmine from karma
   JASMINE,
@@ -84,6 +103,7 @@ files = [
   // Our tests
   'spec/javascripts/**/*_spec*'
 ];
+...
 ```
 
 !SLIDE
@@ -91,6 +111,7 @@ files = [
 ## Huge Success!
 
 <pre class="karmaoutput">
+$ karma start
 <span class="green">INFO [karma]:</span> Karma server started at http://localhost:9876/
 <span class="green">INFO [launcher]:</span> Starting browser Chrome
 <span class="green">INFO [Chrome 28.0 (Linux)]:</span> Connected on socket id OuuVjmz0YmJPjXy_FNUQ

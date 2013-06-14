@@ -63,8 +63,6 @@ angular.module('SlidesController', [])
 
 !SLIDE
 
-TODO: clean up this tree
-
 <pre style="font-family: menlo; line-height: 31px; font-size: 24px;">
     app/assets/javascripts/
     ├── application.js.coffee
