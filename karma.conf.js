@@ -8,17 +8,23 @@ basePath = '';
 
 // list of files / patterns to load in the browser
 files = [
+  // Jasmine from karma
   JASMINE,
   JASMINE_ADAPTER,
+
+  // Production vendor scripts
   'vendor/assets/components/jquery/jquery.js',
   'vendor/assets/components/angular/angular.js',
-  'vendor/assets/components/angular-mocks/angular-mocks.js',
   'vendor/assets/components/angular-resource/angular-resource.js',
   'vendor/assets/components/angular-cookies/angular-cookies.js',
 
+  // Angular testing mocks
+  'vendor/assets/components/angular-mocks/angular-mocks.js',
+
+  // Our code under test
   'app/assets/javascripts/**/*.coffee',
 
-  'karma/*_spec*',
+  // Our tests
   'spec/javascripts/**/*_spec*'
 ];
 

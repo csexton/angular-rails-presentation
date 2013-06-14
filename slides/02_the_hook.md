@@ -20,41 +20,50 @@ srsly?
 
 !SLIDE
 
-# AngularJS
+# <img src="/angular_words.png"/>
 
 !SLIDE
 
-# AngularJS
+# <img src="/angular_words.png"/>
 
 * Built by Google
 
 !SLIDE
 
-# AngularJS
-
-* Built by Google
-* Simple Code
-
-!SLIDE
-
-# AngularJS
+# <img src="/angular_words.png"/>
 
 * Built by Google
 * Simple Code
-* Awesome two-way bindings
 
 !SLIDE
 
-# AngularJS
+# <img src="/angular_words.png"/>
 
 * Built by Google
 * Simple Code
 * Awesome two-way bindings
+
+!SLIDE
+
+# <img src="/angular_words.png"/>
+
+* Built by Google
+* Simple Code
+* Awesome two-way bindings
+* Real HTML
+
+!SLIDE
+
+# <img src="/angular_words.png"/>
+
+* Built by Google
+* Simple Code
+* Awesome two-way bindings
+* Real HTML
 * The way the web will work
 
 !SLIDE
 
-# AngularJS
+# <img src="/angular_words.png"/>
 
-## A Polyfill for the FUTURE
-TODO IMAGE
+# The Polyfill for the <span style="color: #F68">FUTURE</span>
