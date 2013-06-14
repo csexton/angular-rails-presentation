@@ -3,16 +3,20 @@
 <table class="omg"><tr>
 <td>
 <h2>Chris Sexton</h2>
-<h3>@crsexton</h3>
+<h3><a href="http://twitter.com/crsexton">@crsexton</a></h3>
+<h3>Supreme Badass <a href="http://www.radius-networks.com/">@Radius</a></h3>
+<h3><a href="http://www.meetup.com/Arlington-Ruby/">@ArlingtonRuby</a> Coorganizer</h3>
+<h3>Moderator of <a href="http://therubyhangout.com">@RubyHangout</a></h3>
+<h3>I will hug you!</h3>
 <p>
 </p>
 </td>
 <td>
 <h2>Josh Szmajda</h2>
-<h3>@jszmajda</h3>
-<p><a href="http://loki.ws">http://loki.ws</a></p>
-<p>CTO @ Optoro</p>
-<p><img src="wtf"/></p>
-<p>I will hire you!</p>
+<h3><a href="http://twitter.com/jszmajda">@jszmajda</a></h3>
+<h3>CTO <a href="http://www.optoro.com">@Optoro</a></h3>
+<h3><a href="http://www.dcrug.org/">@DCRug</a> Coorganizer</h3>
+<h3>Host of <a href="http://therubyhangout.com">@RubyHangout</a></h3>
+<h3>I will hire you!</h3>
 </td>
 </tr></table>
