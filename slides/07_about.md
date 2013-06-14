@@ -18,4 +18,3 @@
       <h3>I will hire you!</h3>
     </td>
 </tr></table>
-<div id="shmaida">(sh-mai-da)</div>
