@@ -2,8 +2,10 @@
 
 ## MOAR!
 
+* [slides @ ng-rails.herokuapp.com](http://ng-rails.herokuapp.com/)
+* [github.com/csexton/angular-rails-presentation](https://github.com/csexton/angular-rails-presentation)
 * [egghead.io](http://www.egghead.io/)
-* [Google I/O 2013 - Design Decisions in AngularJS](www.youtube.com/watch?v=HCR7i5F5L8c)
+* [Google I/O 2013 - Design Decisions in AngularJS](http://www.youtube.com/watch?v=HCR7i5F5L8c)
 
 
 !SLIDE
