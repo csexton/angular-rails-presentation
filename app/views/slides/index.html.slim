@@ -11,8 +11,11 @@
         ul
           li.comment.row ng-repeat="comment in comments" id="comment-{{comment.id}}"
             | <strong>{{comment.name}}:</strong> {{comment.text}}
+  .chatroom
+    | Join the chatroom:
+    '
+    a href="http://ng-rails.herokuapp.com" ng-rails.herokuapp.com
   .slide-nav
-    a http://whatever.com FIXME
     span.slide-info slide {{ index+1 }}/{{slides.length}}
     .btn-group
       a.btn.btn-mini ng-disabled="prevDisabled()" ng-click="prevSlide()" Previous
