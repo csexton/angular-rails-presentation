@@ -89,6 +89,13 @@ angular.module('SlidesController', [])
 
 <iframe src="/example_01"></iframe>
 
+```html
+<input ng-model="data.name"></input>
+<p>Hello {{data.name}}</p>
+<input ng-model="data.name"></input>
+```
+
+
 !SLIDE
 
 ## Angular Slide Template

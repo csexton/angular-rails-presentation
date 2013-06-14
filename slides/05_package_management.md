@@ -65,7 +65,15 @@ npm install -g bower
 bower install
 ```
 
-TODO: show output
+```bash
+$ bower install
+bower cloning git://github.com/angular/bower-angular.git
+bower fetching angular
+bower cached git://github.com/angular/bower-angular.git
+bower checking out angular#v1.0.7
+bower copying /Users/csexton/.bower/cache/angular/ef2188def21eb1bbd1f1792311942a53
+bower installing angular#1.0.7
+```
 
 !SLIDE
 
